@@ -5,7 +5,7 @@
 }
 
 :root {
-  --logo-width: 67px;
+  --logo-width: 51px;
   --page-h-padding: 3rem;
 }
 
@@ -22,10 +22,10 @@ body {
 
 header {
   display: flex;
-  gap: 1rem;
+  /* gap: 1rem; */
   background-color: #fed9b7;
   color: black;
-  padding: 0 var(--page-h-padding);
+  padding: 10px var(--page-h-padding);
 }
 
 nav {
