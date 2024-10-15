@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --logo-width: 51px;
+  --page-h-padding: 3rem;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  /* gap: 1rem; */
+  background-color: #fed9b7;
+  color: black;
+  padding: 10px var(--page-h-padding);
+}
+
+nav {
+  margin: auto;
+  /* offset logo width to make it center */
+  transform: translateX(calc(var(--logo-width) * -1));
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 5vw;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #e6dada;
+  color: rgb(52, 52, 243);
+}
+
+nav a.active {
+  background-color: #4a6fa5;
+  color: white;
+  font-weight: 700;
+}
+
+nav a.active:hover {
+  background-color: #3c5a8a;
+}
+
+.logo img {
+  width: var(--logo-width, 67px);
+  height: auto;
+}
+
+a.logo {
+  display: inline-flex;
+  align-items: center;
+}
+
+main {
+  flex-grow: 1;
+  padding: 0 var(--page-h-padding);
+}
+
+footer {
+  padding: 0 var(--page-h-padding);
+}
