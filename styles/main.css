@@ -29,10 +29,14 @@ header {
   padding: 10px var(--page-h-padding);
 }
 
+nav {
+  margin: auto;
+}
+
 nav ul {
   list-style: none;
   display: flex;
-  gap: 5vw;
+  gap: 2rem;
   padding: 0;
 }
 
@@ -133,10 +137,9 @@ footer {
 }
 
 /* Media queries */
-@media (width > 768px) {
-  nav {
-    margin: auto;
-    transform: translateX(calc(var(--logo-width) * -1));
+@media (width > 1024px) {
+  nav ul {
+    gap: 5vw;
   }
 }
 
