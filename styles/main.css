@@ -22,22 +22,18 @@ body {
 
 header {
   display: flex;
-  /* gap: 1rem; */
+  justify-content: space-between;
+  align-items: center;
   background-color: #fed9b7;
   color: black;
   padding: 10px var(--page-h-padding);
-}
-
-nav {
-  margin: auto;
-  /* offset logo width to make it center */
-  transform: translateX(calc(var(--logo-width) * -1));
 }
 
 nav ul {
   list-style: none;
   display: flex;
   gap: 5vw;
+  padding: 0;
 }
 
 nav a {
@@ -82,4 +78,106 @@ main {
 
 footer {
   padding: 0 var(--page-h-padding);
+}
+
+/* Hamburger Menu Styles */
+.menu-btn {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.menu-icon .nav-icon {
+  width: 35px;
+  height: 3px;
+  background-color: #000;
+  display: block;
+  margin: 7px 0;
+  transition: 0.3s ease-in-out;
+}
+
+.menu-btn:checked + .menu-icon .nav-icon {
+  background-color: transparent;
+}
+
+.menu-btn:checked + .menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.menu-btn:checked + .menu-icon .nav-icon:after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.nav-icon:before,
+.nav-icon:after {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 3px;
+  background-color: #000;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-icon:before {
+  transform: translateY(-10px);
+}
+
+.nav-icon:after {
+  transform: translateY(10px);
+}
+
+/* Media queries */
+@media (width > 768px) {
+  nav {
+    margin: auto;
+    transform: translateX(calc(var(--logo-width) * -1));
+  }
+}
+
+@media (width <= 768px) {
+  /* Hide the nav on small screens */
+  nav {
+    display: none;
+  }
+
+  /* Show menu icon on small screens */
+  .menu-icon {
+    display: block;
+    transform: translateY(10px);
+  }
+
+  /* Display navigation when menu-btn is checked */
+  .menu-btn:checked ~ nav {
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #fed9b7;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  nav ul li {
+    border-bottom: 1px solid #e6dada;
+  }
+
+  nav ul li a {
+    max-width: 100%;
+    display: block;
+    padding: 15px;
+    font-size: 1.5rem;
+    max-width: 90%;
+    margin: auto;
+  }
 }
