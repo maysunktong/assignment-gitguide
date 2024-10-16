@@ -1,0 +1,48 @@
+#main-container {
+  background-color: #FDFCDC;
+  min-height: 100vh;
+}
+
+.header {
+  font-family: "Sixtyfour Convergence", sans-serif;
+  text-align: center;
+  font-size: xx-large;
+}
+
+.subheader {
+  margin: auto;
+  width: 80%;
+  text-align: center;
+  font-size: medium;
+}
+
+.block__wrapper {
+  width: 80%;
+  margin: auto;
+}
+
+/* style code block */
+.block-item-code-wrapper {
+  padding: 1rem;
+  background-color: white;
+  display: grid;
+}
+
+.block-item-code {
+  display: grid;
+padding: 1rem 0;
+}
+
+.command-head {
+  color: #F07167;
+}
+
+.command-tail {
+  color: #0081A7;
+}
+
+.command-comment {
+  font-style: italic;
+  font-weight: 200;
+  color: gray;
+}
