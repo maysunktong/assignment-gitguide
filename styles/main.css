@@ -184,3 +184,37 @@ footer {
     margin: auto;
   }
 }
+
+/* util classes */
+.full-width {
+  /* this offsets padding of the main */
+  margin-left: calc(var(--page-h-padding) * -1);
+  margin-right: calc(var(--page-h-padding) * -1);
+
+  padding-left: calc(var(--page-h-padding));
+  padding-right: calc(var(--page-h-padding));
+}
+
+.has-bg-color__brown {
+  padding: var(--page-h-padding);
+  background-color: #bba3a1;
+}
+.has-bg-color__blue {
+  padding: var(--page-h-padding);
+  background-color: #c3d2d7;
+}
+
+.has-bg-color__light-yellow {
+  padding: var(--page-h-padding);
+  background-color: #fdfcdc;
+}
+
+.has-bg-color__light-orange {
+  padding: var(--page-h-padding);
+  background-color: #f4e0cd;
+}
+
+.has-bg-color__red {
+  padding: var(--page-h-padding);
+  background-color: #e7c2be;
+}
