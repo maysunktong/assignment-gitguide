@@ -28,7 +28,7 @@
     </header>
 
     <main>
-      <section class="remote-repositories full-width has-bg-color__pink">
+      <section class="remote-repositories full-width has-bg-color__brown">
         <div class="content">
           <h1>Why Remote Repositories Are Necessary</h1>
           <p>
@@ -48,29 +48,30 @@
         </div>
       </section>
 
-      <section class="create-project-github">
-        <h2>Steps to Create a Project on GitHub</h2>
-        <ol>
-          <li>Log in to your GitHub account or create a new account.</li>
-          <li>Click on the "New Repository" button.</li>
-          <li>
-            Fill in the repository name, description, and visibility (public or
-            private).
-          </li>
-          <li>Optionally, add a README, .gitignore, and license file.</li>
-          <li>Click "Create Repository" to finish.</li>
-        </ol>
+      <section class="create-project-github full-width has-bg-color__blue">
+        <div class="content">
+          <h2>Steps to Create a Project on GitHub</h2>
+          <ol>
+            <li>Log in to your GitHub account or create a new account.</li>
+            <li>Click on the "New Repository" button.</li>
+            <li>
+              Fill in the repository name, description, and visibility (public
+              or private).
+            </li>
+            <li>Optionally, add a README, .gitignore, and license file.</li>
+            <li>Click "Create Repository" to finish.</li>
+          </ol>
+        </div>
       </section>
 
-      <img src="./images/git-flow.webp" alt="git-flow image" />
-
       <section class="create-project-locally">
-        <h2>Creating a Project Locally with Git</h2>
-        <p>
-          To create a new project locally using Git, use the following Git
-          commands:
-        </p>
-        <pre>
+        <div>
+          <h2>Creating a Project Locally with Git</h2>
+          <p>
+            To create a new project locally using Git, use the following Git
+            commands:
+          </p>
+          <pre>
           <code>
 # Create a new directory for your project
 mkdir my_project
@@ -87,16 +88,23 @@ git add README.md
 git commit -m "Initial commit"
           </code>
         </pre>
+        </div>
+        <img
+          class="project__image-1"
+          src="./images/git-flow.webp"
+          alt="git-flow image"
+        />
       </section>
 
-      <section class="link-repositories">
-        <h2>Linking Local and Remote Repositories</h2>
-        <p>
-          Once the local project is set up, it can be linked to a remote
-          repository. Use the following commands to link your local repository
-          to GitHub:
-        </p>
-        <pre>
+      <section class="link-repositories full-width has-bg-color__light-orange">
+        <div class="content">
+          <h2>Linking Local and Remote Repositories</h2>
+          <p>
+            Once the local project is set up, it can be linked to a remote
+            repository. Use the following commands to link your local repository
+            to GitHub:
+          </p>
+          <pre>
           <code>
 # Add a remote repository (replace URL with your repository URL)
 git remote add origin https://github.com/yourusername/yourrepo.git
@@ -105,23 +113,25 @@ git remote add origin https://github.com/yourusername/yourrepo.git
 git push -u origin master
           </code>
         </pre>
+        </div>
       </section>
 
-      <section class="contributions">
-        <h2>How Others Can Contribute to the Project</h2>
-        <p>
-          For collaborative development, others can contribute to your project
-          by forking your repository, making changes, and submitting a pull
-          request. The typical workflow is as follows:
-        </p>
-        <ol>
-          <li>Fork the original repository on GitHub.</li>
-          <li>Clone the forked repository to their local machine.</li>
-          <li>Create a new branch to make changes.</li>
-          <li>Push the changes to their fork and submit a pull request.</li>
-        </ol>
-        <p>Common Git commands for contributing:</p>
-        <pre>
+      <section class="contributions full-width has-bg-color__red">
+        <div class="content">
+          <h2>How Others Can Contribute to the Project</h2>
+          <p>
+            For collaborative development, others can contribute to your project
+            by forking your repository, making changes, and submitting a pull
+            request. The typical workflow is as follows:
+          </p>
+          <ol>
+            <li>Fork the original repository on GitHub.</li>
+            <li>Clone the forked repository to their local machine.</li>
+            <li>Create a new branch to make changes.</li>
+            <li>Push the changes to their fork and submit a pull request.</li>
+          </ol>
+          <p>Common Git commands for contributing:</p>
+          <pre>
           <code>
 # Clone the repository
 git clone https://github.com/yourusername/yourrepo.git
@@ -135,29 +145,7 @@ git commit -m "Added a new feature"
 git push origin new-feature-branch
           </code>
         </pre>
-      </section>
-
-      <section class="best-practices">
-        <h2>Best Practices for Collaborative Git Workflows</h2>
-        <ul>
-          <li>Write clear and descriptive commit messages.</li>
-          <li>Use branches to isolate features and bug fixes.</li>
-          <li>
-            Regularly pull updates from the main branch to stay up-to-date.
-          </li>
-          <li>Review pull requests carefully before merging.</li>
-        </ul>
-      </section>
-
-      <section class="conclusion">
-        <h2>Conclusion</h2>
-        <p>
-          Git and GitHub are essential tools for modern software development.
-          They streamline collaboration, provide a robust version control
-          system, and allow multiple developers to contribute efficiently to a
-          project. Mastering Git commands and workflows is a crucial skill for
-          developers working in teams.
-        </p>
+        </div>
       </section>
     </main>
 
