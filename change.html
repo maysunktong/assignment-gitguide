@@ -2,8 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Github-Assignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/changes.css" />
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
@@ -21,10 +28,38 @@
         </ul>
       </nav>
     </header>
-
-    <main>
-      <h2>Home</h2>
-    </main>
+    <section id="main-container">
+      <p class="header">Adding changes to code</p>
+      <p class="subheader">
+        Adding changes into your code is an avoidable part of software
+        development. Knowing how to push code changes to GitHub correctly is
+        equally important because it ensures that your updates are properly
+        tracked, shared with collaborators, and safely stored in a
+        version-controlled environment.
+      </p>
+      <div class="block__wrapper">
+        <div class="block-item">
+          <h3>Make changes to the code locally:</h3>
+          <div>IMAGES</div>
+        </div>
+        <div class="block-item">
+          <h3>Stage the changes:</h3>
+          <p>You stage the changes you made but adding them with a simple command below</p>
+          <div class="block-item-code-wrapper">
+            <code class="block-item-code">
+              <span class="command-comment">#Stage all changes in every file (A dot . means choosing all files)</span>
+              <span class="command-head git">git add <span class="command-tail">.
+              </span></span>
+            </code>
+            <code class="block-item-code">
+              <span class="command-comment">#Stage only a specific file</span>
+              <span class="command-head git">git add <span class="command-tail">style.css
+              </span></span>
+            </code>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer>
       <p>&copy; Git-Gang 2024</p>
     </footer>
