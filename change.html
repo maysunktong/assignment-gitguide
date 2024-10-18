@@ -38,26 +38,102 @@
         version-controlled environment.
       </p>
       <div class="block__wrapper">
-        <div class="block-item">
-          <h3>Make changes to the code locally:</h3>
-          <div>IMAGES</div>
-        </div>
-        <div class="block-item">
-          <h3>Stage the changes:</h3>
-          <p>You stage the changes you made but adding them with a simple command below</p>
-          <div class="block-item-code-wrapper">
-            <code class="block-item-code">
-              <span class="command-comment">#Stage all changes in every file (A dot . means choosing all files)</span>
-              <span class="command-head git">git add <span class="command-tail">.
-              </span></span>
-            </code>
-            <code class="block-item-code">
-              <span class="command-comment">#Stage only a specific file</span>
-              <span class="command-head git">git add <span class="command-tail">style.css
-              </span></span>
-            </code>
+        <article class="block__article">
+          <div class="block-item">
+            <h3>Step 1: Make changes to the code locally:</h3>
+            <div class="block__item-image">
+              <img
+                class="block-image"
+                src="./images/page-change/makingchanges.png"
+                alt=""
+                width="100"
+              />
+              <div class="block-description">
+                <h4 class="description-highlight green">Green Highlight (New Changes):</h4>
+                <p>
+                  The sections of the code highlighted in green represent the new
+                  changes that are about to be added. These lines of code were
+                  added or modified compared to the previous version.
+                </p>
+                <h4 class="description-highlight red">Red Highlight (Old Changes or Deletions):</h4>
+                <p>
+                  The parts highlighted in red are the old version of the code, or
+                  code that has been removed or replaced. In your screenshot, the
+                  red-highlighted code consists of Git command-related
+                  instructions and comments that have either been deleted or
+                  replaced with the new content.
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
+          <div class="block-item">
+            <h3>Step 2: Stage the changes:</h3>
+            <p>
+              You stage the changes you made but adding them with a simple
+              command below
+            </p>
+            <div class="block-item-code-wrapper">
+              <code class="block-item-code">
+                <span class="command-comment"
+                  >#Stage all changes in every file (A dot . means choosing all
+                  files)</span
+                >
+                <span class="command-head git"
+                  >git add <span class="command-tail">. </span></span
+                >
+              </code>
+              <code class="block-item-code">
+                <span class="command-comment">#Stage only a specific file</span>
+                <span class="command-head git"
+                  >git add <span class="command-tail">style.css </span></span
+                >
+              </code>
+            </div>
+          </div>
+          <div class="block-item">
+            <h3>Step 3: Commit the changes:</h3>
+            <p>
+              A commit creates a checkpoint in the project's version history,
+              allowing you and others to track the evolution of the code over
+              time. It is practical to write a meaningful committing message to
+              each commit.
+            </p>
+            <div class="block-item-code-wrapper">
+              <code class="block-item-code">
+                <span class="command-head git"
+                  >git commit -m
+                  <span class="command-tail">"commit message"</span></span
+                >
+              </code>
+            </div>
+          </div>
+          <div class="block-item">
+            <h3>Step 4: Push the changes to the main branch:</h3>
+            <p>Your changes will be updated on Github in the main branch.</p>
+            <div class="block-item-code-wrapper">
+              <code class="block-item-code">
+                <span class="command-head git"
+                  >git push <span class="command-tail">origin main</span></span
+                >
+              </code>
+            </div>
+          </div>
+          <div class="block-item">
+            <p>After pushing, your terminal might look like this...</p>
+            <div class="block-item-code-wrapper">
+              <code class="block-item-code preview-terminal">
+                Enumerating objects: 5, done. <br />
+                Counting objects: 100% (5/5), done. <br />
+                Delta compression using up to 4 threads<br />
+                Compressing objects: 100% (3/3), done.<br />
+                Writing objects: 100% (3/3), 317 bytes | 317.00 KiB/s, done.<br />
+                Total 3 (delta 1), reused 0 (delta 0) <br />
+                To https://github.com/username/repository-name.git
+                5f29a3a..d9b66e7 main -> main
+              </code>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
     <footer>

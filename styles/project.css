@@ -1,0 +1,30 @@
+section {
+  padding: var(--page-h-padding);
+}
+
+.content {
+  max-width: 90ch;
+  margin: auto;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+p {
+  line-height: 1.5;
+}
+
+li {
+  line-height: 1.5;
+}
+
+.create-project-locally {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project__image-1 {
+  width: 50vw;
+  height: 50vh;
+}
