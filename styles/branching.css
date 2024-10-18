@@ -1,0 +1,40 @@
+section {
+    padding: var(--page-h-padding);
+  }
+  
+  .content {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 100%;
+    margin: auto;
+  }
+  
+  h1 {
+    color: #0081A7;
+    margin-top: 0;
+  }
+  
+  p {
+    line-height: 1.5;
+  }
+  
+  li {
+    line-height: 1.5;
+  }
+
+  .branch_image {
+    height: 35vh;
+    width: 45vw;
+ }
+    
+  .pull_request { 
+    height: 40vh;
+    width: 45vw;
+  }
+
+  .pull_merge {
+    height: 65vh;
+    width: 45vw;
+  }
+
+
+  
