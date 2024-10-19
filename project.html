@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Github-Assignment</title>
     <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/changes.css" />
     <link rel="stylesheet" href="./styles/project.css" />
   </head>
   <body>
@@ -71,23 +72,45 @@
             To create a new project locally using Git, use the following Git
             commands:
           </p>
-          <pre>
-          <code>
-# Create a new directory for your project
-mkdir my_project
-cd my_project
 
-# Initialize a new Git repository
-git init
-
-# Add files to the repository
-touch README.md
-git add README.md
-
-# Commit the changes with a message
-git commit -m "Initial commit"
-          </code>
-        </pre>
+          <div class="block-item-code-wrapper">
+            <code class="block-item-code">
+              <br />
+              <span class="command-comment">
+                # Create a new directory for your project
+              </span>
+              <span class="command-head git"
+                >mkdir <span class="command-tail">my_project</span></span
+              >
+              <br />
+              <span class="command-comment"> # Change directory </span>
+              <span class="command-head git"
+                >cd <span class="command-tail">my_project</span></span
+              >
+              <br />
+              <span class="command-comment">
+                # Initialize a new Git repository
+              </span>
+              <span class="command-head git">git init</span>
+              <br />
+              <span class="command-comment">
+                # Create and add files to the repository
+              </span>
+              <span class="command-head git">
+                touch <span class="command-tail">README.md</span>
+                <br />
+                git add <span class="command-tail">README.md</span>
+              </span>
+              <br />
+              <span class="command-comment">
+                # Commit the changes with a message
+              </span>
+              <span class="command-head git"
+                >git commit -m
+                <span class="command-tail">"Initial commit"</span></span
+              >
+            </code>
+          </div>
         </div>
         <img
           class="project__image-1"
@@ -104,15 +127,25 @@ git commit -m "Initial commit"
             repository. Use the following commands to link your local repository
             to GitHub:
           </p>
-          <pre>
-          <code>
-# Add a remote repository (replace URL with your repository URL)
-git remote add origin https://github.com/yourusername/yourrepo.git
-
-# Push your local commits to the remote repository
-git push -u origin main
-          </code>
-        </pre>
+          <div class="block-item-code-wrapper">
+            <span class="command-comment">
+              # Add a remote repository (replace URL with your repository URL)
+            </span>
+            <span class="command-head git"
+              >git remote add origin
+              <span class="command-tail"
+                >https://github.com/yourusername/yourrepo.git</span
+              ></span
+            >
+            <br />
+            <span class="command-comment">
+              # Push your local commits to the remote repository
+            </span>
+            <span class="command-head git">
+              git push -u origin <span class="command-tail">main</span></span
+            >
+            <br />
+          </div>
         </div>
       </section>
 
@@ -131,20 +164,36 @@ git push -u origin main
             <li>Push the changes to their fork and submit a pull request.</li>
           </ol>
           <p>Common Git commands for contributing:</p>
-          <pre>
-          <code>
-# Clone the repository
-git clone https://github.com/yourusername/yourrepo.git
-
-# Create a new branch for your changes
-git checkout -b new-feature-branch
-
-# Make changes, commit, and push the branch
-git add .
-git commit -m "Added a new feature"
-git push origin new-feature-branch
-          </code>
-        </pre>
+          <div class="block-item-code-wrapper">
+            <span class="command-comment"> # Clone the repository </span>
+            <span class="command-head git"
+              >git clone
+              <span class="command-tail"
+                >https://github.com/yourusername/yourrepo.git</span
+              ></span
+            >
+            <br />
+            <span class="command-comment">
+              # Create a new branch for your changes
+            </span>
+            <span class="command-head git">
+              git checkout -b
+              <span class="command-tail">new-feature-branch </span></span
+            >
+            <br />
+            <span class="command-comment">
+              # Make changes, commit, and push the branch
+            </span>
+            <span class="command-head git">
+              git add .
+              <br />
+              git commit -m
+              <span class="command-tail">"Added a new feature"</span>
+              <br />
+              git push
+            </span>
+            <br />
+          </div>
         </div>
       </section>
     </main>

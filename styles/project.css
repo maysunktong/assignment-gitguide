@@ -25,6 +25,29 @@ li {
 }
 
 .project__image-1 {
-  width: 50vw;
-  height: 50vh;
+  width: 50%;
+  max-width: 100%;
+  height: auto;
+}
+
+.command-comment {
+  font-weight: normal;
+  line-height: 1.8;
+  letter-spacing: -1px;
+}
+.command-head {
+  line-height: 1.5;
+}
+.block-item-code-wrapper {
+  word-break: break-all;
+}
+
+/* Media query */
+@media (max-width: 1230px) {
+  .create-project-locally {
+    flex-direction: column;
+  }
+  .project__image-1 {
+    width: 90ch;
+  }
 }
