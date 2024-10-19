@@ -66,7 +66,14 @@ h1 {
 }
 
 img[alt="Vineetha"] {
-  object-position: left center;
+  object-position: left 50%;
+}
+
+img[alt="Ankita"] {
+  object-position: center 10%;
+}
+img[alt="May"] {
+  object-position: center 10%;
 }
 
 footer {
