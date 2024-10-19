@@ -29,16 +29,19 @@ li {
   height: 50vh;
 }
 
+code {
+  text-wrap: wrap;
+  word-break: break-all;
+}
+
 /* Media query */
+@media (max-width: 1230px) {
+  .create-project-locally {
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 768px) {
-  section {
-    padding: var(--page-h-padding-mobile);
-  }
-
-  .content {
-    max-width: 85%;
-  }
-
   .create-project-locally {
     flex-direction: column;
     align-items: center;

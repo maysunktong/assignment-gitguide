@@ -5,8 +5,15 @@
 }
 
 :root {
-  --logo-width: 51px;
+  --logo-width: 50px;
   --page-h-padding: 3rem;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --logo-width: 40px;
+    --page-h-padding: 1.5rem;
+  }
 }
 
 body {
