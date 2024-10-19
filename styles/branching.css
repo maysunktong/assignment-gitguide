@@ -22,18 +22,18 @@ section {
   }
 
   .branch_image {
-    height: 35vh;
-    width: 45vw;
+    height:auto;
+    max-width: 100%;
  }
     
   .pull_request { 
-    height: 40vh;
-    width: 45vw;
+    height:auto;
+    max-width: 100%;
   }
 
   .pull_merge {
-    height: 65vh;
-    width: 45vw;
+    height:auto;
+    max-width: 100%;
   }
 
 
