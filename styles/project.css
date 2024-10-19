@@ -38,9 +38,6 @@ li {
 .command-head {
   line-height: 1.5;
 }
-.block-item-code-wrapper {
-  word-break: break-all;
-}
 
 /* Media query */
 @media (max-width: 1230px) {
