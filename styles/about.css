@@ -65,13 +65,21 @@ h1 {
   color: #007bff;
 }
 
+img[alt="Vineetha"] {
+  object-position: left center;
+}
+
+footer {
+  margin-top: 4rem;
+}
+
 @media (width < 769px) {
   .team-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (width < 425px) {
+@media (width < 600px) {
   .team-grid {
     grid-template-columns: 1fr;
   }

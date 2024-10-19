@@ -229,3 +229,11 @@ footer {
 .block-item-code-wrapper {
   word-break: break-all;
 }
+
+footer {
+
+  background-color: #e67a72;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
