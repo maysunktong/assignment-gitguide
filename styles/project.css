@@ -25,12 +25,20 @@ li {
 }
 
 .project__image-1 {
-  width: 50vw;
-  height: 50vh;
+  width: 50%;
+  max-width: 100%;
+  height: auto;
 }
 
-code {
-  text-wrap: wrap;
+.command-comment {
+  font-weight: normal;
+  line-height: 1.8;
+  letter-spacing: -1px;
+}
+.command-head {
+  line-height: 1.5;
+}
+.block-item-code-wrapper {
   word-break: break-all;
 }
 
@@ -39,25 +47,7 @@ code {
   .create-project-locally {
     flex-direction: column;
   }
-}
-
-@media (max-width: 768px) {
-  .create-project-locally {
-    flex-direction: column;
-    align-items: center;
-  }
-
   .project__image-1 {
-    width: 80vw;
-    height: 40vh;
-  }
-
-  h1 {
-    font-size: 1.8rem;
-  }
-
-  p,
-  li {
-    line-height: 1.6;
+    width: 90ch;
   }
 }
