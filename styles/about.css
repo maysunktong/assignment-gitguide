@@ -1,0 +1,25 @@
+font-size: 1.5rem;
+margin-bottom: 10px;
+}
+
+.team-info p {
+font-size: 0.9rem;
+margin-bottom: 15px;
+color: #666;
+}
+
+.social-icons {
+display: flex;
+justify-content: center;
+gap: 10px;
+}
+
+.social-icons a {
+color: #333;
+font-size: 1.2rem;
+transition: color 0.3s;
+}
+
+.social-icons a:hover {
+color: #007BFF;
+}
