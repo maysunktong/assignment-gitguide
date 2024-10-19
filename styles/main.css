@@ -225,3 +225,7 @@ footer {
   padding: var(--page-h-padding);
   background-color: #e7c2be;
 }
+
+.block-item-code-wrapper {
+  word-break: break-all;
+}
