@@ -1,0 +1,40 @@
+section {
+    padding: var(--page-h-padding);
+  }
+  
+  .content {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 100%;
+    margin: auto;
+  }
+  
+  h1 {
+    color: #0081A7;
+    margin-top: 0;
+  }
+  
+  p {
+    line-height: 1.5;
+  }
+  
+  li {
+    line-height: 1.5;
+  }
+
+  .branch_image {
+    height:auto;
+    max-width: 100%;
+ }
+    
+  .pull_request { 
+    height:auto;
+    max-width: 100%;
+  }
+
+  .pull_merge {
+    height:auto;
+    max-width: 100%;
+  }
+
+
+  

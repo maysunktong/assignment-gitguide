@@ -1,0 +1,50 @@
+section {
+  padding: var(--page-h-padding);
+}
+
+.content {
+  max-width: 90ch;
+  margin: auto;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+p {
+  line-height: 1.5;
+}
+
+li {
+  line-height: 1.5;
+}
+
+.create-project-locally {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project__image-1 {
+  width: 50%;
+  max-width: 100%;
+  height: auto;
+}
+
+.command-comment {
+  font-weight: normal;
+  line-height: 1.8;
+  letter-spacing: -1px;
+}
+.command-head {
+  line-height: 1.5;
+}
+
+/* Media query */
+@media (max-width: 1230px) {
+  .create-project-locally {
+    flex-direction: column;
+  }
+  .project__image-1 {
+    width: 90ch;
+  }
+}

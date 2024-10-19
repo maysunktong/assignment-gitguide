@@ -1,68 +1,93 @@
-
-
 h1 {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
 }
 
 .team-section {
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .team-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
 .team-member {
-    background-color: #fff;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
 }
 
 .team-member:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .team-member img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
 
 .team-info {
-    padding: 15px;
-    text-align: center;
+  padding: 15px;
+  text-align: center;
 }
 
 .team-info h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
 .team-info p {
-    font-size: 0.9rem;
-    margin-bottom: 15px;
-    color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  color: #666;
 }
 
 .social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 .social-icons a {
-    color: #333;
-    font-size: 1.2rem;
-    transition: color 0.3s;
+  color: #333;
+  font-size: 1.2rem;
+  transition: color 0.3s;
 }
 
 .social-icons a:hover {
-    color: #007BFF;
+  color: #007bff;
+}
+
+img[alt="Vineetha"] {
+  object-position: left 50%;
+}
+
+img[alt="Ankita"] {
+  object-position: center 10%;
+}
+img[alt="May"] {
+  object-position: center 10%;
+}
+
+footer {
+  margin-top: 4rem;
+}
+
+@media (width < 769px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width < 600px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
 }

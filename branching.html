@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Github-Assignment</title>
     <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/branching.css" />
+    <link rel="stylesheet" href="./styles/changes.css" />
   </head>
   <body>
     <header>
@@ -19,15 +21,166 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="project.html">Project</a></li>
-          <li><a href="change.html">Change</a></li>
+          <li><a href="change.html">Changes</a></li>
           <li><a href="branching.html" class="active">Branching</a></li>
           <li><a href="about.html">About</a></li>
         </ul>
       </nav>
     </header>
-
     <main>
-      <h2>Home</h2>
+      <section class="about-branches full-width has-bg-color__blue">
+        <div class="content">
+          <h1>About branches</h1>
+          <p>Use a branch to isolate development work without affecting other branches in the repository. 
+            Each repository has one default branch, and can have multiple other branches. 
+            You can merge a branch into another branch using a pull request.
+          </p>
+              <img
+              class="branch_image"
+              src="./images/git-branch.png"
+              alt="branch_image">
+          <ul>
+            <li>Branches allow you to develop features, fix bugs, or safely experiment with new ideas in a contained area of your repository.</li>
+            <li>When you create a repository with content on GitHub, GitHub creates the repository with a single branch. 
+                This first branch in the repository is the default branch.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="create-project-github full-width has-bg-color__red">
+        <div class="content">
+          <h2>How to create a new branch</h2>
+          <ol>
+            <li>Open Terminal or Command Prompt.</li>
+            <li> <P>Navigate to Your Project</P>
+            If you're not already in your project folder, use the cd command to navigate there:
+            <div class="block-item-code-wrapper">
+              <code class="block-item-code">
+                <span class="command-comment"
+                  ># Change to your repo directory</span
+                >
+                <span class="command-head git"
+                  >cd /path/to/your/repository<span class="command-tail">. </span></span
+                >
+              </code>
+            </div>            
+            </li>
+            <li>
+               <P>Create a New Branch:</P>
+              Run the following command to create a new branch (replace branch-name with your preferred branch name):
+              <div class="block-item-code-wrapper">
+                <code class="block-item-code">
+                  <span class="command-comment"
+                    ># Create a new branch</span
+                  >
+                  <span class="command-head git"
+                    >git checkout -b branch-name<span class="command-tail">. </span></span
+                  >
+                </code>
+              </div>
+            </li>
+            <li><P>Push the Branch to GitHub:</P>
+              To push the new branch to the GitHub remote repository
+              <div class="block-item-code-wrapper">
+                <code class="block-item-code">
+                  <span class="command-comment"
+                    ># Push the new branch to your Github Repository</span
+                  >
+                  <span class="command-head git"
+                    >git push -u origin branch-name<span class="command-tail">.</span></span
+                  >
+                </code>
+              </div>
+             <P>This command pushes the new branch to GitHub and sets it up for tracking.</P>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="create-project-github full-width has-bg-color__blue">
+        <div class="content">
+          <h2>How to create a pull request and merge pull request</h2>
+          <p>A pull request (PR) in GitHub is a way to propose and request
+            a review of changes you've made in a branch before merging them into another branch (often main or master). 
+            It allows developers to collaborate by discussing, reviewing, and approving 
+            the changes before they are integrated into the main codebase.</p>
+          <img
+           class="pull_request"
+           src="./images/github-pull-request.png"
+           alt="pull_merge">
+            
+          <p>And this is what it looks like once you've submitted the PR request:</p>
+          <img
+            class="pull_merge"
+            src="./images/github-merge.webp"
+            alt="pull_request2 image">
+
+          <p>You might see a big green button at the bottom that says 'Merge pull request'. Clicking this means you'll merge your changes into the primary branch.
+          Sometimes you'll be a co-owner or the sole owner of a repo, in which case you may not need to create a PR to merge your changes. 
+          However, it's still a good idea to make one so you can keep a more complete history of your updates
+          and to make sure you always create a new branch when making changes.</p>
+          </div>
+          </section>
+
+          <section class="create-project-github full-width has-bg-color__red">
+            <div class="content">
+              <h2>More commands to work with branches</h2>
+              <P>Here are some useful commands to work with branches</P>
+              <ol>
+                <li> 
+                  <P>List all the branches git is tracking in your local repo</P>
+                <div class="block-item-code-wrapper">
+                  <code class="block-item-code">
+                    <span class="command-comment"
+                      ># List your branches</span
+                    >
+                    <span class="command-head git"
+                      >git branch</span>
+                  </code>
+                </div>            
+                </li>
+                <li>
+                   <P>Switch from one branch to another</P>
+                  <div class="block-item-code-wrapper">
+                    <code class="block-item-code">
+                      <span class="command-comment"
+                        ># Checkout a specific branch</span
+                      >
+                      <span class="command-head git"
+                        >git checkout branch-name<span class="command-tail">. </span></span
+                      >
+                    </code>
+                  </div>
+                </li>
+                 <li>
+                  <P>Merge the current local branch with another branch like main </P>
+                  <div class="block-item-code-wrapper">
+                    <code class="block-item-code">
+                      <span class="command-comment"
+                        ># Merge checked out branch to another branch</span
+                      >
+                      <span class="command-head git"
+                        >git merge other_branch<span class="command-tail">. </span></span
+                      >
+                    </code>
+                  </div>
+                </li>
+                <li>
+                  <P>Deleting the local branch when you dont need to be tracked anymore </P>
+                  <div class="block-item-code-wrapper">
+                    <code class="block-item-code">
+                      <span class="command-comment"
+                        ># Delete the local old branch</span
+                      >
+                      <span class="command-head git"
+                        >git branch -d branch_name<span class="command-tail">. </span></span
+                      >
+                    </code>
+                  </div>
+                </li>
+              </ol>
+            </div>
+          </section>
     </main>
     <footer>
       <p>&copy; Git-Gang 2024</p>

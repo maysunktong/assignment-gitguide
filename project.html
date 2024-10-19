@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Github-Assignment</title>
     <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/changes.css" />
+    <link rel="stylesheet" href="./styles/project.css" />
   </head>
   <body>
     <header>
@@ -19,7 +21,7 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="project.html" class="active">Project</a></li>
-          <li><a href="change.html">Change</a></li>
+          <li><a href="change.html">Changes</a></li>
           <li><a href="branching.html">Branching</a></li>
           <li><a href="about.html">About</a></li>
         </ul>
@@ -27,8 +29,175 @@
     </header>
 
     <main>
-      <h2>Home</h2>
+      <section class="remote-repositories full-width has-bg-color__brown">
+        <div class="content">
+          <h1>Why Remote Repositories Are Necessary</h1>
+          <p>
+            Remote repositories are essential for collaboration and version
+            control. They serve as a central hub for project files, allowing
+            developers to push, pull, and merge changes across distributed
+            teams. Remote repositories help keep backups, maintain different
+            versions of a project, and enable collaboration among team members.
+          </p>
+          <ul>
+            <li>Centralized location for team collaboration</li>
+            <li>Backup of project versions</li>
+            <li>
+              Enables Continuous Integration/Continuous Deployment (CI/CD)
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="create-project-github full-width has-bg-color__blue">
+        <div class="content">
+          <h2>Steps to Create a Project on GitHub</h2>
+          <ol>
+            <li>Log in to your GitHub account or create a new account.</li>
+            <li>Click on the "New Repository" button.</li>
+            <li>
+              Fill in the repository name, description, and visibility (public
+              or private).
+            </li>
+            <li>Optionally, add a README, .gitignore, and license file.</li>
+            <li>Click "Create Repository" to finish.</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="create-project-locally">
+        <div>
+          <h2>Creating a Project Locally with Git</h2>
+          <p>
+            To create a new project locally using Git, use the following Git
+            commands:
+          </p>
+
+          <div class="block-item-code-wrapper">
+            <code class="block-item-code">
+              <br />
+              <span class="command-comment">
+                # Create a new directory for your project
+              </span>
+              <span class="command-head git"
+                >mkdir <span class="command-tail">my_project</span></span
+              >
+              <br />
+              <span class="command-comment"> # Change directory </span>
+              <span class="command-head git"
+                >cd <span class="command-tail">my_project</span></span
+              >
+              <br />
+              <span class="command-comment">
+                # Initialize a new Git repository
+              </span>
+              <span class="command-head git">git init</span>
+              <br />
+              <span class="command-comment">
+                # Create and add files to the repository
+              </span>
+              <span class="command-head git">
+                touch <span class="command-tail">README.md</span>
+                <br />
+                git add <span class="command-tail">README.md</span>
+              </span>
+              <br />
+              <span class="command-comment">
+                # Commit the changes with a message
+              </span>
+              <span class="command-head git"
+                >git commit -m
+                <span class="command-tail">"Initial commit"</span></span
+              >
+            </code>
+          </div>
+        </div>
+        <img
+          class="project__image-1"
+          src="./images/git-flow.webp"
+          alt="git-flow image"
+        />
+      </section>
+
+      <section class="link-repositories full-width has-bg-color__light-orange">
+        <div class="content">
+          <h2>Linking Local and Remote Repositories</h2>
+          <p>
+            Once the local project is set up, it can be linked to a remote
+            repository. Use the following commands to link your local repository
+            to GitHub:
+          </p>
+          <div class="block-item-code-wrapper">
+            <span class="command-comment">
+              # Add a remote repository (replace URL with your repository URL)
+            </span>
+            <span class="command-head git"
+              >git remote add origin
+              <span class="command-tail"
+                >https://github.com/yourusername/yourrepo.git</span
+              ></span
+            >
+            <br />
+            <span class="command-comment">
+              # Push your local commits to the remote repository
+            </span>
+            <span class="command-head git">
+              git push -u origin <span class="command-tail">main</span></span
+            >
+            <br />
+          </div>
+        </div>
+      </section>
+
+      <section class="contributions full-width has-bg-color__red">
+        <div class="content">
+          <h2>How Others Can Contribute to the Project</h2>
+          <p>
+            For collaborative development, others can contribute to your project
+            by forking your repository, making changes, and submitting a pull
+            request. The typical workflow is as follows:
+          </p>
+          <ol>
+            <li>Fork the original repository on GitHub.</li>
+            <li>Clone the forked repository to their local machine.</li>
+            <li>Create a new branch to make changes.</li>
+            <li>Push the changes to their fork and submit a pull request.</li>
+          </ol>
+          <p>Common Git commands for contributing:</p>
+          <div class="block-item-code-wrapper">
+            <span class="command-comment"> # Clone the repository </span>
+            <span class="command-head git"
+              >git clone
+              <span class="command-tail"
+                >https://github.com/yourusername/yourrepo.git</span
+              ></span
+            >
+            <br />
+            <span class="command-comment">
+              # Create a new branch for your changes
+            </span>
+            <span class="command-head git">
+              git checkout -b
+              <span class="command-tail">new-feature-branch </span></span
+            >
+            <br />
+            <span class="command-comment">
+              # Make changes, commit, and push the branch
+            </span>
+            <span class="command-head git">
+              git add .
+              <br />
+              git commit -m
+              <span class="command-tail">"Added a new feature"</span>
+              <br />
+              git push
+            </span>
+            <br />
+          </div>
+        </div>
+      </section>
     </main>
+
     <footer>
       <p>&copy; Git-Gang 2024</p>
     </footer>
